@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Attendance App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- User Authentication -->
+  <div id="authContainer">
+    <h2>User Authentication</h2>
+    <form id="loginForm">
+      <input type="text" id="studentName" placeholder="Student Name" maxlength="100" required>
+      <input type="email" id="email" placeholder="Email" maxlength="100" required>
+      <input type="password" id="password" placeholder="Password (at least 7 characters, including uppercase, lowercase, numbers, and special characters)" required>
+      <button type="submit">Login</button>
+    </form>
+    <a href="reg.html"><button id="registerBtn">Register</button></a> <!-- Redirects to reg.html -->
+  </div>
+
+  <!-- Student Interface -->
+  <div id="studentContainer" class="hidden">
+    <div id="header">
+      <h2>Welcome, <span id="studentNameDisplay"></span>!</h2>
+      <div id="calendar">
+        <!-- Calendar will be dynamically populated -->
+      </div>
+      <div id="attendanceSummary">
+        <p>Days Present: <span id="daysPresent">0</span></p>
+        <p>Days Absent: <span id="daysAbsent">0</span></p>
+      </div>
+    </div>
+    <div id="coursesList">
+      <!-- Course list will be dynamically populated -->
+    </div>
+  </div>
+
+  <!-- Instructor Interface -->
+  <div id="instructorContainer" class="hidden">
+    <h2>Welcome, Instructor!</h2>
+    <button id="createCourseBtn">Create New Course</button>
+    <div id="courseManagement">
+      <!-- Course management options will be dynamically populated -->
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div id="modal" class="hidden">
+    <!-- Modal content will be dynamically populated -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Course list styles */
+.courseItem {
+  margin-bottom: 5px;
+}
+
+/* Modal styles */
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Other container styles */
+#authContainer,
+#studentContainer,
+#instructorContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.present {
+  background-color: green;
+  color: white;
+}
+
+.absent {
+  background-color: red;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+#studentContainer {
+  text-align: center; /* Center-align content */
+}
+
+#calendar {
+  display: inline-block; /* Ensure it takes only necessary width */
+  margin: 20px auto; /* Center-align the calendar */
+}
+.present {
+  color: green;
+}
+
+.absent {
+  color: red;
+}
+
+
+.calendarTable {
+  margin: 0 auto;
+}
+
+
